@@ -1,0 +1,34 @@
+GET http://localhost:5217/games
+
+###
+http://localhost:5217/games/1
+###
+POST http://localhost:5217/games
+Content-Type: application/json
+
+{
+    "name": "TEST GAME",
+    "genreId": 1,
+    "price": 60.99,
+    "releaseDate": "2017-03-03"
+}
+
+
+###
+
+PUT http://localhost:5217/games/1
+Content-Type: application/json
+
+{
+    "name": "The Legend of Zeldmagvgv",
+    "genreId": 1,
+    "price": 85.99,
+    "releaseDate": "2017-03-03"
+}
+
+###
+DELETE http://localhost:5217/games/1
+
+
+###
+GET http://localhost:5217/genres
